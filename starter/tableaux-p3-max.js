@@ -11,3 +11,18 @@ Aide :
   - Si la valeur courante est supérieure à 'max', elle devient le nouveau 'max'.
 - Affichez le résultat.
 */
+
+const nombres = [3, 11, 7, 2, 90, 10];
+let max = nombres[0];
+
+// for (const nombre of nombres) {
+//     console.log(nombre);
+// }
+
+for (const nombre of nombres) {
+    if (nombre > max) {
+        max = nombre;
+    }
+}
+
+console.log(max);
