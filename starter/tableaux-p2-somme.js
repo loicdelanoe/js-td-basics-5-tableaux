@@ -14,9 +14,31 @@ Version alternative (avec BONUS) :
 3. Parcourez votre tableau de nombres à l'aide d'une boucle 'for/of' pour calculer la somme des valeurs du tableau.
 4. Affichez le message final : "… + … + … = …".
 */
+let message = '';
+let somme = 0;
+const nombres = [11, 3, 7, 2, 9, 10];
 
+console.log("Voici mon tableau de nombres :");
+for (const nombre of nombres) {
+    console.log(nombre);
+}
 
+// nombres.forEach((nombre) => {
+//     somme += nombre;
+// });
+for (const nombre of nombres) {
+    somme += nombre;
+}
 
+for (let i = 0; i < nombres.length; i++) {
+    if (i === (nombres.length - 1)) {
+        message += `${nombres[i]} = `;
+    } else {
+        message += `${nombres[i]} + `;
+    }
+}
+
+console.log(message + somme);
 
 
 
