@@ -13,7 +13,6 @@ console.log(semaine[6]);
 
 // 3. Nombre d'éléments dans un tableau
 // EXERCICE 3 : Affichez le nombre de jours dans une semaine et le dernier jour de la semaine
-console.log(semaine.length);
 console.log(semaine[6]);
 
 // 4. Modifier les données d'un tableau
